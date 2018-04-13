@@ -26,4 +26,15 @@ PS> .\powerdp.ps1 -t 192.168.1.100 -u user1 -d .\dictionary.txt
 ```
 With option '-o' this command writes result of attack to 'out.txt'
 
-### Usage
+### Some Tips:
+* If your powershell environment's execution policy is restricted, you can use following command instead of changing execution policy
+``` powershell
+PS> powershell -ExecutionPolicy ByPass -File .\powerdp.ps1 -t "target_ip" -u "target_user" -d "dictionary_file"
+```
+
+### Screenshots
+##### Note: Sorry for 3rd and 4th image. You can zoom in via your browser.
+![](https://github.com/tkn80/powerdp/blob/master/screenshots/prdp_ss1.png)
+![](https://github.com/tkn80/powerdp/blob/master/screenshots/prdp_ss2.png)
+![](https://github.com/tkn80/powerdp/blob/master/screenshots/prdp_ss3.png)
+![](https://github.com/tkn80/powerdp/blob/master/screenshots/prdp_ss4.png)
