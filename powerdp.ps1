@@ -54,7 +54,6 @@ Param (
 
 if($to) {$timeout = ($to*10)}
 else {$timeout = 50}
-Write-Host $timeout
 
 $code = @'
 using System;
@@ -136,7 +135,6 @@ foreach($line in (Get-Content $d)){
 		if($w_helper::isFail($p_id[2])) {
 			kill $p_id[2]
 			$dict.add($line, 'x')
-            $timeout = 10
 			break
 		}else {
 			if($w_helper::isSucc($p_id[2], $t)) {
